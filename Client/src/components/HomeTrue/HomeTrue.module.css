@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #e0e0e0; 
+    padding: 20px;
+}
+
+.image {
+    border-radius: 50%;
+}
+
+.cv {
+    border-radius: 50%;
+}

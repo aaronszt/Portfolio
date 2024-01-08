@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import Home from './components/Home/Home';
+import HomeTrue from './components/HomeTrue/HomeTrue';
+import Proyects from './components/Proyects/Proyects';
 
 function App() {
   const location = useLocation()
@@ -8,7 +9,8 @@ function App() {
   return (
     <div>
       <Routes>
-      <Route path = '/' element = {<Home/>}/>
+        <Route path = '/' element = {<HomeTrue/>}/>
+        <Route path='/proyects' element = {<Proyects/>}/>
       </Routes>
     </div>
   );
