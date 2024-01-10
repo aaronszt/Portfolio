@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+    background-color: #e0e0e0; 
+    padding: 20px;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.projectInfo {
+    padding: 20px;
+    background-color: white;
+}
