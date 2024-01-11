@@ -1,24 +1,62 @@
-.container {
+.container {                /*DIV PADRE*/
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    min-height: 100vh;
-    background-color: #e0e0e0; 
-    padding: 20px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
-.projectContainer {
+.classContainer {           /*DIV MAPEADO*/
+    grid-column-start: 1;
+    grid-column-end: 11;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    margin-bottom: 20px;
+    height: 100vh;
+    background-color: #e0e0e0;
+    scroll-snap-align: center;
 }
 
-.image {
-    max-width: 100%;
-    height: auto;
+.classContainer img {
+    justify-self: center;
+    height: 450px;
+    width: 450px;
 }
 
-.projectInfo {
-    padding: 20px;
+.classContainer h2 {
+    text-align: center;
+}
+
+.classContainer p {
+    margin-left: 20px;
+}
+
+.arrowContainer {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 40px;
+    display: inline-block;
+    pointer-events: none;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.arrowLink {
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    pointer-events: auto;
+}
+
+.classColor {
     background-color: white;
+    height: 157px;
 }

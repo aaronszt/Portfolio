@@ -7,7 +7,7 @@
 }
 
 .container h1 {
-    font-size: 40px;
+    font-size: 30px;
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 4;
@@ -15,7 +15,7 @@
 }
 
 .classH3 {
-    font-size: 22px;
+    font-size: 20px;
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 7;
@@ -23,7 +23,7 @@
 }
 
 .about {
-    font-size: 22px;
+    font-size: 19px;
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 11;
@@ -38,13 +38,15 @@
 }
 
 .classImg img {
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
 }
 
 .classFooter {
     grid-column-start: 1;
     grid-column-end: 11;
-    grid-row-start: 17;
+    grid-row-start: 16;
     grid-row-end: 19;
     text-decoration: none;
 }
@@ -68,9 +70,9 @@
     position: relative;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 25px;
-    top: 20px;
-    padding: 35px;
+    font-size: 20px;
+    top: 10px;
+    padding: 25px;
 }
 
 .claseLink{

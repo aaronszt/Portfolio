@@ -1,14 +1,25 @@
 import React from 'react';
 import style from './Footer.module.css';
+import swal from 'sweetalert';
 
 const Footer = () => {
+
+    const hadlerAlert = () => {
+        swal({
+            title: 'Phone',
+            text: '+5103874072071',
+            icon: 'info',
+            timer: '5000'
+        });
+    };
+
     return (
         <div className={style.footer}>
             <h3>Contact</h3>
             <div>
-                <a href="https://www.linkedin.com/in/aaron-sztychmasjter-218307266/" target="_blank" rel="noopener noreferrer" className={style.link}>Linkedin</a> |{' '}
-                <a href="https://github.com/aaronszt" target="_blank" rel="noopener noreferrer" className={style.link}>Github</a> |{' '}
-                <a href="tel:+5403874072071" className={style.link}>Phone</a>
+                <a href="https://www.linkedin.com/in/aaron-sztychmasjter-218307266/" target="_blank" rel="noreferrer noopener" >Linkedin</a> |{' '}
+                <a href="https://github.com/aaronszt" target="_blank" rel="noreferrer noopener" >Github</a> |{' '}
+                <span onClick={hadlerAlert} className={style.classP}>Phone</span>
             </div>
         </div>
     );
