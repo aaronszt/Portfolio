@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './About.module.css';
-import imgage from '../../img/imagen-programando.jpg';
+import imgage from '../../assets/image/imagen-programando.jpg';
 import { Link } from 'react-router-dom';
 
 const About = () => {

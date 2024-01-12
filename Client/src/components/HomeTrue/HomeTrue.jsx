@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import Ima from '../../img/Ima.png';
+import Ima from '../../assets/image/Ima.png';
 import style from './HomeTrue.module.css';
 import { Link, NavLink } from 'react-router-dom';
 import alert from 'sweetalert';
@@ -9,6 +9,7 @@ import { useState } from 'react';
 const HomeTrue = () => {
 
     const [access, setAccess] = useState(false);
+    const wordReference = "while (behappy()) { code();}";
     
     const hadlerAlert = () => {
         alert({
